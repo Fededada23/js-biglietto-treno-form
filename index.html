@@ -6,33 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <h1>Calcola il prezzo del tuo biglietto</h1>
         <div class="container">
             <div class="row">
-                <div class="col">
-               
+                <div class="col-12 col-md-4">
                     <input type="text" id="nome" name="nome" placeholder="inserisci  nome e cognome" required>
+                </div>
+                <div class="col-12 col-md-4">
                     <input type="text" id="km" name="km" placeholder="inserisci km da percorrere" required>
-                    <input type="text" id="eta" name="eta" placeholder="inserisci eta" required>
+
+                </div>
+                <div class="col-12 col-md-4">
+                    <select class="form-control" id="eta" name="eta">
+                        <option value="">seleziona eta</option>
+                        <option value="minorenne">minorenne</option>
+                        <option value="maggiorenne">maggiorenne</option>
+                        <option value="over">over65</option>
+                    </select>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <button id="genera">genera</button>
                     <button id="annulla">annulla</button>
                 </div>
-            </div>
-        </div>    
-        <div class="container-small">
+            </div>    
             <div class="row">
-                <div class="col-grande">
-                    
-                    <p id="nome-passeggero"></p>
+                <div class="col-12 col-md-4">
+                    <h4 id="nome-passeggero"></h4>
                 </div>    
-                <h2 id="prezzo"></h2>
+                <div class="col-12 col-md-4"></div>
+                <div class="col-12 col-md-4">
+                    <h5 id="prezzo"></h5>
+                </div>
+                
             </div>
+        </div>
         <script type="text/javascript" src="./js/script.js"></script>    
     </body>
 </html>
